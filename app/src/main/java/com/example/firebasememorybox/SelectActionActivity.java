@@ -9,7 +9,7 @@ import android.view.View;
 
 public class SelectActionActivity extends AppCompatActivity {
 
-    public final String TAG = "Denna";
+    public final String TAG = "ST";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
