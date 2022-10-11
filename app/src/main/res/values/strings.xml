@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FirebaseMemoryBox</string>
+    <string-array name="memoryRating">
+        <item>1 - The Worst</item>
+        <item>2 - Not my Favorite</item>
+        <item>3 - Average</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>
