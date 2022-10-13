@@ -44,7 +44,7 @@
         android:textColorHint="@color/black"
         android:textSize="25sp" />
     <EditText
-        android:id="@+id/memoryName"
+        android:id="@+id/memNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50sp"
@@ -60,6 +60,7 @@
         android:textColorHint="@color/design_default_color_on_secondary"
         android:textSize="25sp" />
     <EditText
+        android:id="@+id/memoryDescEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50sp"
@@ -77,6 +78,7 @@
         android:textSize="25sp" />
     <Button
         android:id="@+id/submit_button"
+        android:onClick="addMemoryButtonClicked"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100sp"
