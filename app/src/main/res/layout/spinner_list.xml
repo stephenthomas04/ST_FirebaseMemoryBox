@@ -7,9 +7,9 @@
         android:layout_height="@dimen/spinnerHeight"
         android:text="My Choice"
         android:padding="@dimen/padding"
-        android:background="@color/secondaryDarkColor"
+        android:background="@color/textBackground"
         android:textColor="@color/primaryTextColor"
-        android:textSize="@dimen/fontRegular"
+        android:textStyle="bold"
         android:layout_marginTop="@dimen/margin"
         />
 

@@ -2,7 +2,6 @@ package com.example.firebasememorybox;
 
 import static androidx.core.content.ContextCompat.startActivity;
 
-
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
@@ -112,5 +111,3 @@ public class FirebaseHelper {
 
     }
 }
-
-

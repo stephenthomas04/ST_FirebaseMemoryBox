@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/memorySpinner"
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50sp"
@@ -36,15 +36,15 @@
         android:layout_marginBottom="15dp"
         android:background="@color/textBackground"
         android:ems="10"
-        android:hint="Select a Memory Rating: "
+        android:text="Select a Memory Rating: "
         android:gravity="left"
         android:minHeight="48dp"
         android:padding="6dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="25sp" />
-    <TextView
-        android:id="@+id/memoryRating"
+    <EditText
+        android:id="@+id/memoryName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50sp"
@@ -59,7 +59,7 @@
         android:textColor="@color/design_default_color_on_secondary"
         android:textColorHint="@color/design_default_color_on_secondary"
         android:textSize="25sp" />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50sp"

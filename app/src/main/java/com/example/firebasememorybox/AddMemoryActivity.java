@@ -1,13 +1,13 @@
 package com.example.firebasememorybox;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AddMemoryActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener  {
 
@@ -24,8 +24,8 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_add_memory);
 
         // this attaches my spinner design (spinner_list.xml) and my array of spinner choices(R.array.memoryRating)
-        spinner = findViewById(R.id.memorySpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_list,
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.custom_spinner_dropdown_row,
                 getResources().getStringArray(R.array.memoryRating));
 
         // this attaches my custom row design (how I want each row to look)
@@ -43,5 +43,8 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
     @Override
     public void onNothingSelected(AdapterView<?> parent) { }
 
+    public void addMemories(View v) {
+        Toast.makeText(getApplicationContext(), "Memory Added", Toast.LENGTH_SHORT).show();
+    }
 
 }
