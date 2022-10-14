@@ -46,8 +46,13 @@ import java.util.concurrent.Executor;
 public class FirebaseHelper {
     public final String TAG = "Denna";
     private static String uid = null;      // var will be updated for currently signed in user
-    private FirebaseAuth mAuth;
-    private FirebaseFirestore db;
+    private FirebaseAuth mAuth; // connects with Authenticaion in firebase
+    private FirebaseFirestore db; // connects with the data base
+
+    public FirebaseFirestore getDb() {
+        return db;
+    }
+
     private ArrayList<Memory> myMemories;
 // will refer to all Memory objects for authorized user
 
