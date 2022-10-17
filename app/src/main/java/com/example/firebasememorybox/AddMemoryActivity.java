@@ -26,6 +26,8 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_memory);
+        memoryName = findViewById(R.id.memNameEditText);
+        memoryDesc = findViewById(R.id.memoryDescEditText);
 
         // this attaches my spinner design (spinner_list.xml) and my array of spinner choices(R.array.memoryRating)
         spinner = findViewById(R.id.spinner);

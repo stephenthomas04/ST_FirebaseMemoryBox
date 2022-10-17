@@ -247,6 +247,9 @@ certain things from occurring until after the onSuccess is finished.
                 });
     }
 
+    public void updateUid(String uid) {
+    }
+
 
     //https://stackoverflow.com/questions/48499310/how-to-return-a-documentsnapshot-as-a-result-of-a-method/48500679#48500679
     public interface FirestoreCallback {

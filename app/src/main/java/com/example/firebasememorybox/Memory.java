@@ -17,6 +17,14 @@ public class Memory implements Parcelable {
         this.docID = docID;
     }
 
+    public Memory(int rating, String name, String desc) {
+        this.rating = rating;
+        this.name = name;
+        this.desc = desc;
+        this.docID = "No docID yet";
+    }
+
+
     @Override
     public String toString() {
         return name;
