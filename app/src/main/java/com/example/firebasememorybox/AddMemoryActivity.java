@@ -39,14 +39,12 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
 
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-        memoryName = findViewById(R.id.memNameEditText);
-        memoryDesc = findViewById(R.id.memoryDescEditText);
 
     }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        spinnerSelectedText = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), spinnerSelectedText, Toast.LENGTH_SHORT).show();
     }
     // This method is required, even if empty, for the OnItemSelectedListener to work
     @Override
@@ -67,10 +65,10 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
 
 // Note the syntax here for how to access an index of a string array within
 // the java
-        for (int i = 1; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             if (spinnerSelectedText.equals(getResources().
                     getStringArray(R.array.memoryRating)[i])) {
-                memoryRatingNum = 6-i;
+                memoryRatingNum = 5-i;
                 break;
             }
         }
