@@ -217,6 +217,7 @@ public class FirebaseHelper {
                 });
     }
 
+
 /* https://www.youtube.com/watch?v=0ofkvm97i0s
 This video is good!!!   Basically he talks about what it means for tasks to be asynchronous
 and how you can create an interface and then using that interface pass an object of the interface
